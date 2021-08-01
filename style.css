@@ -1,0 +1,74 @@
+
+/* this changes the size of everything 
+inside the html element, not just the font */
+html {
+    font-size: 40.5%;
+}
+/* this applies font to the h1 inside header element
+even though it is in body element...
+and also sets the background to the whole page color */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(59, 57, 57);
+}
+/* this applies to the header element and centers the h1 title 
+and the buttons and gives all of it some space from the top of
+the window */
+header {
+    text-align: center;
+    margin-top: 15rem;
+}
+/* this targets the h1 element, gives it a font size
+and also an all around margine, separating it from the
+buttons, top and sides */
+.title {
+    font-size: 4rem;
+    margin: 9rem;
+
+}
+/* this gives the buttons a font, makes the letters in the
+buttons upper case, the padding property sets the area space
+between the content and the border, border-radius rounds the 
+borders edge, font size is set within this selector, and we have
+set a margin on the sides of the buttons */
+button{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    padding: 1.5rem 2rem;
+    border-radius: .4rem;
+    font-size: 1.6rem;
+    margin: 0rem 9rem;
+}
+
+
+/* this container holds all of my created divs...
+border property sets border width,style,color
+display type is grid with (grid-template-colunm 
+property being applied to container from js
+which defines the number of columns and size
+ */
+#container { 
+    border: 2.4rem solid rgb(56, 60, 117);
+    border-radius: .6rem;
+    display: grid;
+    /* the size of my container width and hight */
+    max-width: 55rem;
+    min-height: 55rem;
+    /* margin right next to border */
+    margin: 4rem auto;
+}
+/* this is the style added to my div after 
+it is created, gives it a tiny border
+and the color that is applied with mouseover */
+.gridItem{
+    border: .1rem solid rgba(78, 76, 76, .5);
+    background-color: rgba(230, 225, 225);
+}
+/* any thing under 750px win width makes
+container smaller */
+@media screen and (max-width: 750px)  {
+    #container {
+      max-width: 360px;
+      min-height: 360px;
+    }
+}
